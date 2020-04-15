@@ -12,7 +12,7 @@ if (enterValue === null)
 } else if (totalPrice > credits)
 {
   message = ('Недостаточно средств на счету!');
-} else if (totalPrice <= credits)
+} else if (totalPrice < credits)
 {
   message = (`Вы купили ${enterValue} дроидов, на счету осталось ${credits - totalPrice} кредитов.`);
 }else {
